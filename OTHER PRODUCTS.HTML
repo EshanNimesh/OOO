@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OTHER PRODUCTS.CSS">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ABOUT US.HTML">About Us</a></li>
+          <li><a href="CONSOLES.HTML">Consoles</a></li>
+          <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+          <li><a href="GAMES.HTML">Game</a></li>
+          <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+          <li><a href="Order.html">Order</a></li>
+          <li><a href="CheackOut.html">CheackOut</a></li>
+          <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+      <div id="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+      
+    </header>
+    
+
+    <main>
+        <section class="product-page">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="Redragon_K1ING_M916_PRO_4K_Hz_3-Mode_Wireless_Gaming_Mouse_8.webp" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 2</div>
+                    <div class="product-image">
+                        <img src="G3XvcS9kyMDuVcWm7qDGXb.jpg" alt="Product 2" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A must-have accessory for your console.</p>
+                        <p class="price">$29.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 3</div>
+                    <div class="product-image">
+                        <img src="hyper-x-haste-2-pro-4k-wireless-review.avif" alt="Product 3" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>Experience unmatched performance.</p>
+                        <p class="price">$69.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="msi-optix-mag321curv-4kgaming-monitor-feature.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="asus-pg32uqx-12.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="2023-11-01-image-27.webp" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="Logitech-G-PRO-Racing-Wheel-and-Pedals-2.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="logitech-g29-steering-wheel_3_2048x2048.webp" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="6214d915869a4684bb5d09ad_MSL-FAMILY-22-AUG-WHITE_Camera_REAR-THREE-QUART-1-p-1600.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>  
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="R4JVkTQjAoM6MS4ouicpDS.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>  
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="razer-nari-ultimate-wireless-gaming-headset-600px-v2.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>  
+
+                <div class="product-card">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-image">
+                        <img src="RAZER-BLACKSHARK-V2-X-GAMING-HEADSET-GREEN-7.jpg" alt="Product 1" class="card-image">
+                    </div>
+                    <div class="product-info">
+                        <p>A great product for gaming enthusiasts.</p>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ###Shop.LK. All rights reserved. Powered by Pentacove</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

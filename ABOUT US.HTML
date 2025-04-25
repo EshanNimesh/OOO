@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ABOUT US.CSS">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ABOUT US.HTML">About Us</a></li>
+          <li><a href="CONSOLES.HTML">Consoles</a></li>
+          <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+          <li><a href="GAMES.HTML">Game</a></li>
+          <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+          <li><a href="Order.html">Order</a></li>
+          <li><a href="CheackOut.html">CheackOut</a></li>
+          <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+    
+    <div id="cart-sidebar">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    
+
+    </header>
+    <section class="about-us">
+        <section class="main-branch-card">
+          <h2 class="shiny-silver">Main Branch</h2>
+          <div class="card-content">
+            <div class="shop-image">
+              <img src="2020-10-16.jpg" alt="Shop Image">
+            </div>
+            <div class="branch-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4710.251682300823!2d79.85113684549266!3d6.9104723867396345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1737894145522!5m2!1sen!2slk"  width="320"  height="240"  style="border:0;"  allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>     
+          </div>
+          <div class="branch-description1">
+            <p>Welcome to Exin, your trusted partner in product focus! Our main branch is proudly located on the 2nd floor of Unity Plaza, right in the heart of Colombo. Since opening our doors in 2009, we’ve been dedicated to delivering exceptional [services/products] and building lasting relationships with our valued customers. Come visit us and experience the commitment and care that has defined Exin for over a decade.</p>
+          </div>
+        </section>
+      
+        <section class="sub-branch-card">
+          <h2 class="shiny-silver">Sub Branch</h2>
+          <div class="card-content">
+            <div class="shop-image">
+              <img src="image_36e0d0078d.jpg" alt="Sub Branch Image">
+            </div>
+            <div class="branch-map2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4710.251682300823!2d79.85113684549266!3d6.9104723867396345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1737894145522!5m2!1sen!2slk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="branch-description">
+            <p>Welcome to Exin’s Sub Branch, located in the bustling area of Nugegoda. Since opening in 2017, this branch has been committed to extending the same quality and dedication that Exin is known for. Conveniently situated to serve our valued customers in the region, we continue to bring products closer to you. Visit us today and experience what sets Exin apart!</p>
+          </div>
+        </section>
+      </section>
+         
+
+   <div class="branch-table-container">
+  <table class="branch-table">
+    <thead>
+      <tr>
+        <th>Branch Name</th>
+        <th>Opening Hours</th>
+        <th>Closing Hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Main Branch</td>
+        <td>9:00 AM</td>
+        <td>7:00 PM</td>
+      </tr>
+      <tr>
+        <td>Sub Branch</td>
+        <td>10:00 AM</td>
+        <td>8:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+      
+<div class="branch-table-container">
+  <table class="branch-table">
+    <thead>
+      <tr>
+        <th>Branch Name</th>
+        <th>Opening Hours</th>
+        <th>Closing Hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Main Branch</td>
+        <td>9:00 AM</td>
+        <td>7:00 PM</td>
+      </tr>
+      <tr>
+        <td>Sub Branch</td>
+        <td>10:00 AM</td>
+        <td>8:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    <footer>
+        <p>&copy; 2025 ###Shop.LK. All rights reserved. Powered by Pentacove</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CheackOut.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About Us</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Game</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="Cheackout.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+       
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html"></a></li>
+            <li><a href="Cheackout.html">Cheackout</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+      <div id="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+      
+
+    </header>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div id="cart-items"></div>
+        <button onclick="submitOrder()">Submit Order</button>
+      </div>
+    <main>
+        <h2>Checkout</h2>
+
+        <section id="orderSummary">
+            <h3>Your Cart</h3>
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="summaryTotal">Rs.0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="userDetails">
+            <h3>Delivery Details</h3>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required />
+
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" required />
+
+            <label for="payment">Payment Method</label>
+            <input type="text" id="payment" required />
+
+            <button onclick="submitOrder()">Pay</button>
+        </section>
+
+        <section id="confirmation" style="display: none;">
+            <h3>Thank you for your purchase!</h3>
+            <p>Your order will be delivered in 3 days.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ExGaming Store. All rights reserved.</p>
+    </footer>
+
+    <script src="CheackOut.js"></script>
+</body>
+</html>

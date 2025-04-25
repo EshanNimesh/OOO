@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CONSOLES.CSS">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About Us</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Game</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+    <div id="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+      <div id="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+      
+
+    </header>
+    
+
+    <div class="product-container">
+      <section class="product-card">
+          <img src="xboxseriesx-1-blogroll-1599646330013_160w.jpg" alt="Console Image">
+          <div class="product-info">
+              <h2 class="product-name">Xbox-Series X</h2>
+              <p class="price">$499.99</p>
+          </div>
+          <p class="description">Experience the fastest, most powerful Xbox ever with the Xbox Series X. Featuring a custom-built AMD processor with 12 teraflops of GPU power, lightning-fast load times with its 1TB SSD, and stunning 4K gaming at up to 120FPS. Enjoy next-gen performance, ray tracing, and an extensive library of backward-compatible games. The Xbox Series X is designed for true gamers, offering smooth gameplay and breathtaking visuals in a sleek, modern design.</p>
+      </section>
+  
+      <section class="product-card">
+          <img src="next-xbox-will-reportedly-be-a-reference-design-for-3rd-v0-gxy9oX1HytVt36IU2MQrXZT2SVojzbf7hiZEspVOD_c.webp" alt="Console Image">
+          <div class="product-info">
+              <h2 class="product-name">Next-Box OEM</h2>
+              <p class="price">$599.99</p>
+          </div>
+          <p class="description">The NextBox OEM delivers cutting-edge gaming performance with ultra-fast processing power, stunning 4K visuals, and seamless gameplay. Equipped with advanced graphics, a high-speed SSD for near-instant load times, and optimized cooling, it ensures a premium gaming experience. Whether you're diving into next-gen titles or enjoying backward compatibility, the NextBox OEM is built for gamers who demand power, speed, and innovation.</p>
+      </section>
+
+      <section class="product-card">
+        <img src="ps5proreveal_8_large.jpg" alt="Console Image">
+        <div class="product-info">
+            <h2 class="product-name">PS5-Pro</h2>
+            <p class="price">$799.99</p>
+        </div>
+        <p class="description">The PlayStation 5 Pro redefines next-gen gaming with enhanced performance, 8K resolution support, and improved ray tracing for stunning visuals. Equipped with a more powerful GPU, a larger high-speed SSD, and an optimized cooling system, the PS5 Pro is designed for elite gamers. Enjoy higher frame rates, faster load times, and the most immersive gaming experience PlayStation has ever offered.</p>
+    </section>
+
+    <section class="product-card">
+      <img src="ps5-2va2br9eeb2j1tnl.jpg" alt="Console Image">
+      <div class="product-info">
+          <h2 class="product-name">PS5</h2>
+          <p class="price">$799.99</p>
+      </div>
+      <p class="description">Experience lightning-fast loading, ultra-high-speed SSD performance, and breathtaking visuals with the PlayStation 5. Featuring ray tracing, 4K gaming at up to 120Hz, and immersive 3D audio, the PS5 takes gaming to the next level. The innovative DualSense controller delivers haptic feedback and adaptive triggers for a more immersive experience. Dive into the latest exclusives and fan-favorite titles with next-gen power.</p>
+  </section>
+
+  <section class="product-card">
+    <img src="joker_white.jpg" alt="Console Image">
+    <div class="product-info">
+        <h2 class="product-name">PS5-Controller</h2>
+        <p class="price">$119.99</p>
+    </div>
+    <p class="description2">The PlayStation DualSense controller brings next-level immersion to gaming with haptic feedback and adaptive triggers that respond to in-game actions. Featuring a sleek ergonomic design, a built-in microphone, and a 3.5mm headset jack, the DualSense ensures comfort and connectivity. With enhanced motion sensors and a long-lasting battery, experience precise control and deeper engagement in every game.</p>
+</section>
+
+<section class="product-card">
+  <img src="powera-is-promising-massive-upgrades-for-its-two-new-xbox-v0-jXkjTKYMNsSJOr9-KfXER0obyxgcLoHe5lSdZ9oLWi0.webp" alt="Console Image">
+  <div class="product-info">
+      <h2 class="product-name">Xbox-Controller</h2>
+      <p class="price">$99.99</p>
+  </div>
+ a  <p class="description">The Xbox Wireless Controller offers a refined design with textured grips, a hybrid D-pad, and responsive buttons for ultimate precision. Seamlessly switch between Xbox Series X|S, Xbox One, PC, and mobile devices with Bluetooth connectivity. Enjoy lag-free gaming with low-latency wireless technology, and take control with customizable button mapping for a personalized experience.</p>
+</section>
+
+
+  </div>
+  
+    
+
+          
+          
+    
+        
+
+    <footer>
+        <p>&copy; 2025 ###Shop.LK. All rights reserved. Powered by Pentacove</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

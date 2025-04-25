@@ -1,0 +1,439 @@
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: darkgreen; 
+  padding: 20px 30px; 
+  height: 65px;
+}
+
+
+.logo {
+  height: 120px; 
+  margin-right: 20px;
+  position: absolute;
+  left: 3%; 
+  top: 1px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  flex: 1; 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 45px; 
+}
+
+
+.nav-links a {
+  text-decoration: none; 
+  color: white; 
+  font-size: 18px; 
+  font-family: Arial, sans-serif; 
+  transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+  color: lightgreen; 
+}
+
+
+
+header div:nth-child(2) {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+} 
+
+ header div:nth-child(2) div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+} 
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+}
+
+
+@media (max-width: 768px) {
+ 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkgreen;
+    position: absolute;
+    top: 65px; 
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  .card-container {
+    flex-direction: column; 
+
+  }
+
+
+  .banner {
+    padding: 10px;
+  }
+
+  .banner-content {
+    width: 80%;
+    font-size: 14px;
+  }
+
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  footer {
+    font-size: 12px;
+  }
+}
+
+
+#menu-toggle {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(240, 227, 227);
+}
+
+.mobile-nav-links {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #222;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mobile-nav-links li {
+  margin: 10px 0;
+}
+
+.mobile-nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.mobile-nav-links a:hover {
+  color: #ffcc00;
+}
+
+
+@media (max-width: 768px) {
+  .nav-container {
+      display: flex;
+  }
+
+  .menu-btn {
+      display: block;
+  }
+
+
+  #menu-toggle:checked ~ .mobile-nav-links {
+      display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.product-page {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #269835;
+  color: white;
+}
+
+
+.product-image {
+  width: 100%;
+  height: 50%; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.1);
+}
+
+
+.product-info {
+  padding: 15px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+  margin-top: auto;
+}
+
+
+@media (max-width: 900px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+footer {
+  background-color: green; 
+  color: white; 
+  text-align: center; 
+  padding: 15px 0; 
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  border-top: 2px solid darkgreen; 
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0; 
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+    height: 60px;
+  }
+
+  .logo {
+    height: 100px;
+    left: 2%;
+    top: 5px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 15px;
+  }
+
+  .product-name {
+    font-size: 16px; 
+  }
+
+  .product-info {
+    padding: 10px; 
+  }
+  footer {
+    padding: 10px 0;
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 20px;
+    height: 60px;
+  }
+
+  .logo {
+    height: 100px;
+    left: 2%;
+    top: 5px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+
+  .product-image {
+    height: 60%; 
+  }
+
+  .product-info {
+    padding: 8px; 
+  }
+
+  footer {
+    padding: 10px 0;
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+}
+#cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+#cart-count {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+#cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+#cart-sidebar.show {
+  right: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  #cart-icon {
+    font-size: 28px; /* Make the cart icon larger for easier tapping */
+    top: 10px;  /* Adjust position for smaller screens */
+    right: 10px;
+  }
+
+  #cart-sidebar {
+    width: 100%; /* Full width on mobile */
+    right: -100%; /* Start hidden off-screen */
+  }
+
+  #cart-sidebar.show {
+    right: 0; /* Slide in from the right */
+  }
+}

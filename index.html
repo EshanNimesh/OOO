@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="INDEX.CSS"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About Us</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Game</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+       
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+    
+    <div id="cart-sidebar">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    
+
+    </header>
+      
+    <main>
+        <section class="banner">
+            <img src="pexels-garrettmorrow-3593983.jpg" alt="A stunning banner" class="banner-image">
+            <div class="banner-content">
+                <h1>Welcome to Our Store</h1>
+                <p>Your one-stop shop for gaming products</p>
+            </div>
+        </section>
+        <div class="card-container">
+            <div class="card">
+              <div class="card-header">
+                <h2>OUR PRODUCTS</h2>
+              </div>
+              
+              <div class="card-body">
+                <div class="card-image">
+                  <img src="pexels-lulizler-3165335.jpg" alt="Card Image">
+                </div>
+          
+                <div class="card-features">
+                  <ul>
+                    <li> &#9989;High-quality materials</li>
+                    <li>  &#9989;Ergonomic design </li>
+                    <li> &#9989;Easy to use and maintain</li>
+                    <li> &#9989;Compact and portable</li>
+                    <li> &#9989;Affordable pricing</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="card-footer">
+                <div class="left-text">
+                  <p>Designed with precision, our product combines quality and performance. Built to last and offer value, it’s the perfect solution for your daily needs.</p>
+                </div>
+                
+                <div class="right-text">
+                  <p>Lightweight, easy to use, and packed with features, this product enhances lifestyle. Affordable and reliable, it’s the choice you can trust.</p>
+                </div>
+              </div>
+            </div>
+          
+
+            <div class="card">
+                <div class="card-header">
+                  <h2>OUR VALUE</h2>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-image">
+                    <img src="240_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Card Image">
+                  </div>
+            
+                  <div class="card-features">
+                    <ul>
+                      <li> &#9989;Commitment to Quality</li>
+                      <li> &#9989;Innovation at Every Step</li>
+                      <li> &#9989;Innovation at Every Step</li>
+                      <li> &#9989;Commitment to Quality</li>
+                      <li> &#9989;Integrity in All Actions</li>
+                    </ul>
+                  </div>
+                </div>
+                
+
+                <div class="card-footer">
+                  <div class="left-text">
+                    <p>At the heart of everything we do is a commitment to quality and integrity. We strive to exceed expectations and build lasting relationships with our customers.</p>
+                  </div>
+                  
+                  <div class="right-text">
+                    <p>Our values guide us in delivering innovative solutions while being responsible stewards of the environment. We are dedicated to making a positive impact in everything we create.</p>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                  <h2>WHY US</h2>
+                </div>
+                
+                <div class="card-body2">
+                    <div class="card-image2">
+                      <img src="pexels-cottonbro-4009598.jpg" alt="Card Image">
+                    </div>
+                  </div>
+            
+                 
+                
+                <div class="card-footer">
+                  <div class="whyleft-text">
+                    <p>We stand apart by offering products that combine quality, affordability, and reliability. Our dedication to excellence ensures you get the best value every time.</p>
+                  </div>
+                  
+                  <div class="whyright-text">
+                    <p>Choosing us means choosing innovation, customer care, and lasting performance. We are committed to making your experience seamless and your life easier.</p>
+                  </div>
+                </div>
+              
+          </div>
+          
+        
+        </section>
+    </main>
+        
+    <footer>
+        <p>&copy; 2025 ###Shop.LK. All rights reserved. Powered by Pentacove</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Order.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About Us</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Game</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="Cheackout.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+       
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html"></a></li>
+            <li><a href="Cheackout.html">Cheackout</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+    
+    <div id="cart-sidebar">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    
+
+    </header>
+
+  <main>
+    <section id="processors" class="category-section">
+      <h3>Processors</h3>
+      <div class="item-grid">
+        <div class="item-card">
+          <img src="image/6e379ba9-2b45-45e5-804f-307d44081ac4.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">AMD Ryzen 9 7950X3D </h4>
+            <p class="item-price">Rs. 28,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">5</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="AMD Ryzen 9 7950X3D-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="AMD Ryzen 9 7950X3D"
+                data-price="28000"
+                data-stock="5"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/amd-ryzen-9-5950x_sym5.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">AMD RYZEN 9 5950X 16 CORE 32 THREAD PROCESSOR</h4>
+            <p class="item-price">Rs. 45,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">8</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="AMD RYZEN 9 5950X -qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="AMD RYZEN 9 5950X "
+                data-price="45000"
+                data-stock="8"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/title.jpg " alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">RYZEN 5-7600X/h4>
+            <p class="item-price">Rs. 35,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">11</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="RYZEN 5-7600X"
+                data-price="35000"
+                data-stock="11"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/Intel_Core_i97740.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Intel® Core™ i9-14900 P</h4>
+            <p class="item-price">Rs. 56,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">1</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="Intel® Core™ i9-14900-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Intel® Core™ i9-149005"
+                data-price="56000"
+                data-stock="1"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/Intel-Core-i5-11600K-1.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Intel i5</h4>
+            <p class="item-price">Rs. 15,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">13</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Intel i5"
+                data-price="25000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/santa-clara-calif-march-31-260nw-1947914080.webp" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">INTEL® CORE™ i7-2600</h4>
+            <p class="item-price">Rs. 34,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">9</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="INTEL® CORE™ i7-2600-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="INTEL® CORE™ i7-26005"
+                data-price="34000"
+                data-stock="9"
+              />
+            </label>
+          </div>
+        </div>
+                                                
+      </div>
+    </section>
+    
+
+
+    <section id="processors" class="category-section">
+      <h3>Graphic cards</h3>
+      <div class="item-grid">
+        <div class="item-card">
+          <img src="image/Asus-Graphics-Card-Price-in-Nepal.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name"> VGA021 - ASUS ROG</h4>
+            <p class="item-price">Rs. 135,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">5</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="VGA021 - ASUS ROG-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="VGA021 - ASUS ROG"
+                data-price="135000"
+                data-stock="5"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/dQOzvwyVzKJcaRjPuuXg6oBw5sAQhxZDUFHl6uny.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Gigabyte GeForce RTX 5070</h4>
+            <p class="item-price">Rs. 305,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">3</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="Gigabyte GeForce RTX 5070-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Gigabyte GeForce RTX 5070"
+                data-price="305000"
+                data-stock="3"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/F7EvHmpbpxnyeQJmPNN6AzYHRtcQlP5eL6ae3bKx.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">ASUS ROG STRIX RTX 5080</h4>
+            <p class="item-price">Rs. 360,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">7</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="ASUS ROG STRIX RTX 5080-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="ASUS ROG STRIX RTX 5080"
+                data-price="360000"
+                data-stock="7"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/images (3).jpeg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">VGA036 - ZOTAC </h4>
+            <p class="item-price">Rs. 227,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="VGA036 - ZOTAC-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="VGA036 - ZOTAC5"
+                data-price="227000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/jC9VqErlxq1UC6kxtY1OLd1wj7KifJgn52vmczkI.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Biostar GeForce GT73</h4>
+            <p class="item-price">Rs. 345,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="Biostar GeForce GT73-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Biostar GeForce GT73"
+                data-price="345000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/MSI-Radeon-RX-6700-XT-MECH-2X-12G-OC-Retail-Box-Front.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">MSI RADEON RX 6500 </h4>
+            <p class="item-price">Rs. 312,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="MSI RADEON RX 6500-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="MSI RADEON RX 65005"
+                data-price="312,000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+                                                
+      </div>
+    </section>
+
+
+    <section id="processors" class="category-section">
+      <h3>Motherbords</h3>
+      <div class="item-grid">
+        <div class="item-card">
+          <img src="image/65501c607f8b0708b64ff529-asrock-b450m-steel-legend-socket-am4-amd.jpg" alt="Intel i5" class="item-img" />
+          <div class="item-details">NZXT N7 B550</h4>
+            <p class="item-price">Rs. 25,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="NZXT N7 B550-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="NZXT N7 B550"
+                data-price="25000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/B550M Steel Legend(M1).png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">ASRock X670E Taichi.</h4>
+            <p class="item-price">Rs. 25,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="ASRock X670E Taichi-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="ASRock X670E Taichi"
+                data-price="25000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/download (1).jpeg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Gigabyte X670E Aorus Pro X.</h4>
+            <p class="item-price">Rs. 75,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="Gigabyte X670E Aorus Pro X-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Gigabyte X670E Aorus Pro X5"
+                data-price="75000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/download.jpeg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Gigabyte Z790 Aorus Xtreme</h4>
+            <p class="item-price">Rs. 111,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Gigabyte Z790 Aorus Xtreme"
+                data-price="111000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/images (1).jpeg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Asus ROG Strix B550-F Gaming Wi-Fi</h4>
+            <p class="item-price">Rs. 58,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Asus ROG Strix B550-F "
+                data-price="58000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/images (2).jpeg" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">MSI MAG B850 Tomahawk MAX Wifi</h4>
+            <p class="item-price">Rs. 50,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="MSI MAG B850 Tomahawk"
+                data-price="50000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+                                                
+      </div>
+    </section>
+
+
+    <section id="processors" class="category-section">
+      <h3>Ram</h3>
+      <div class="item-grid">
+        <div class="item-card">
+          <img src="image/hfyTrdKC1bJEKrSn5SCKyBc4vW7sN0cjGj9UyatQ.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Team TFORCE VULCAN Z 3200MHZ (8GB-16GB) - SINGLE</h4>
+            <p class="item-price">Rs. 35,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Team TFORCE VULCAN Z"
+                data-price="35000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/MAgsf4E1qSSyCOAjeWkziSCcAtSVh7PV3loYLoP9.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">CORSAIR VENGEANCE RGB RS 8GB DDR4 3600MHZ</h4>
+            <p class="item-price">Rs. 35,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="CORSAIR VENGEANCE RGB RS 8GB DDR4"
+                data-price="35000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/O43495fDk0oWLFUPmqYM58ekQQCylLtIhlZKrP7u.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">CORSAIR VENGEANCE RGB 16GB DDR5 5600MHZ - Intel XMP5</h4>
+            <p class="item-price">Rs. 33,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="CORSAIR VENGEANCE RGB 16GB DDR5"
+                data-price="33000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/RmVuEr7sJ6cVqPLxzRd6mefljdjtZ6eXH8oXzZVt.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">TEAM TFORCE DELTA TUF RGB 32GB (16X2) 5600MHZ - Intel</h4>
+            <p class="item-price">Rs. 40,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="TEAM TFORCE DELTA TUF RGB 32GB"
+                data-price="40000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/wDck1sZd0OmTj8bwBmTZQvfvLRTVHgFka7ah5905.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">TEAM TFORCE VULCAN 8GB D5 INTEL 5200MHZ</h4>
+            <p class="item-price">Rs. 10,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="TEAM TFORCE VULCAN 8GB D5"
+                data-price="10000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/zUwlpGr5xOwB9QsHuIal1NPUIuepyaNo6DpG42r7.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">CORSAIR VENGEANCE RGB DDR5 6000MHZ - AMD (32GB-64GB) KIT</h4>
+            <p class="item-price">Rs. 83,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="CORSAIR VENGEANCE RGB DDR5 6000MHZ"
+                data-price="83000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+                                                
+      </div>
+    </section>
+
+
+
+    <section id="processors" class="category-section">
+      <h3>Storage</h3>
+      <div class="item-grid">
+     
+        <div class="item-card">
+          <img src="image/Bs7K7t4ccbZYQwU3zoFtIc8RMqtiErMl6IrokuVt.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">SAMSUNG 870 QVO 1TB</h4>
+            <p class="item-price">Rs. 2,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="SAMSUNG 870 QVO 1TB"
+                data-price="2000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/CLG2pu0lcQ07ap3buu8CsDRBHBNqcylvADjjq3w2.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name"> New ArrivalTEAM TFORCE A440 LITE M.2 GEN4 up to 7400MBPs 512GB - 2TB</h4>
+            <p class="item-price">Rs. 26,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="TFORCE A440 LITE M.2 GEN4"
+                data-price="26000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/MF723qw6PkemIJ1gSR52y5SJ7HoeEIhhIWsWOSwQ.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Lexar NM620 M.2 Gen3x4 NVMe 256GB - 2TB</h4>
+            <p class="item-price">Rs. 18,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Lexar NM620 M.2 Gen3x4 NVMe 256GB - 2TB5"
+                data-price="18000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/KAq7d2GTcdEhpqG81GGg2ON6boPlVIJryf97s9Kd.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">TFORCE A440 LITE M.2 GEN4</h4>
+            <p class="item-price">Rs. 12,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="TFORCE A440 LITE M.2 GEN4"
+                data-price="12000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="image/AMIGZZ2BiYTDvm3WtdFQeVgIbK1qKGzy4Zgy4nhx.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">SAMSUNG 990 PRO PCIe 4.0 NVMe SSD 1TB - 2TB</h4>
+            <p class="item-price">Rs. 37,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="SAMSUNG 990 PRO PCIe 4.0 NVMe SSD 1TB - 2TB"
+                data-price="37000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+                
+        <div class="item-card">
+          <img src="image/CrCvNGkk7IAyjolNuuhmwKNEKTkeofmbMPC4MCVr.png" alt="Intel i5" class="item-img" />
+          <div class="item-details">
+            <h4 class="item-name">Samsung 980 NVMe M.2 SSD 500GB - 1TB</h4>
+            <p class="item-price">Rs. 44,000</p>
+            <p class="item-stock">In stock: <span class="stock-count">15</span></p>
+            
+            <!-- ✅ THIS is where your input goes -->
+            <label for="intel-i5-qty">Qty:
+              <input
+                type="number"
+                id="intel-i5-qty"
+                min="0"
+                max="15"
+                value="0"
+                data-name="Samsung 980 NVMe M.2 SSD 500GB - 1TB5"
+                data-price="44000"
+                data-stock="15"
+              />
+            </label>
+          </div>
+        </div>
+        
+        
+      </div>
+    </section>
+    
+  <!-- ACTION BUTTONS -->
+  <div class="action-buttons">
+    <button onclick="addToCart()">Add to Cart</button>
+    <button onclick="saveFavourite()">❤️ Save Favourite</button>
+    <button onclick="applyFavourite()">⭐ Apply Favourite</button>
+  </div>
+
+  <!-- CART TABLE -->
+  <section id="cart">
+    <h3>🛒 Your Cart</h3>
+    <table border="1" id="cartTable">
+      <tr><th>Item</th><th>Qty</th><th>Price</th><th>Subtotal</th></tr>
+    </table>
+    <h4>Total: Rs. <span id="totalPrice">0</span></h4>
+  </section>
+
+  <!-- BUY NOW BUTTON -->
+  <button onclick="goToCheckout()">Buy Now</button>
+
+    
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ExGaming. All rights reserved.</p>
+  </footer>
+
+  <script src="Order.js"></script>
+</body>
+</html>

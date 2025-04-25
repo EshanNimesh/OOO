@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GAMES.CSS">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div ><img src="EXIN.png" alt="Logo" class="logo"></div>   
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ABOUT US.HTML">About Us</a></li>
+          <li><a href="CONSOLES.HTML">Consoles</a></li>
+          <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+          <li><a href="GAMES.HTML">Game</a></li>
+          <li><a href="UPCOMING GAMES.HTML">Upcoming Game</a></li>
+          <li><a href="Order.html">Order</a></li>
+          <li><a href="CheackOut.html">CheackOut</a></li>
+          <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <input type="checkbox" id="menu-toggle">
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ABOUT US.HTML">About</a></li>
+            <li><a href="CONSOLES.HTML">Consoles</a></li>
+            <li><a href="OTHER PRODUCTS.HTML">Other Products</a></li>
+            <li><a href="GAMES.HTML">Games</a></li>
+            <li><a href="UPCOMING GAMES.HTML">Upcoming Games</a></li>
+            <li><a href="Order.html">Order</a></li>
+            <li><a href="CheackOut.html">CheackOut</a></li>
+            <li><a href="FAQ.HTML">FAQ</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div id="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+      
+      <div id="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+      
+    </header>
+    
+    <main>
+     
+        <section class="top-selling">
+            <h2>Top Selling</h2>
+            <div class="card-container">
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="slide-07.jpg" alt="Game 1">
+                    </div>
+                    <div class="info">
+                        <h3>Game 1</h3>
+                        <p>$59.99</p>
+                        <div class="hover-description">Experience the magic like never before in Hogwarts Legacy, an immersive open-world action RPG set in the Wizarding World. Step into the shoes of a young witch or wizard in the 1800s, uncover ancient secrets, master powerful spells, and explore a richly detailed Hogwarts and beyond. Forge your own path, choose your allies, and shape the fate of the wizarding world in this spellbinding adventure.</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="capsule_616x353.jpg" alt="Game 2">
+                    </div>
+                    <div class="info">
+                        <h3>Game 2</h3>
+                        <p>$49.99</p>
+                        <div class="hover-description">Jump into the adrenaline-fueled world of Apex Legends, a fast-paced battle royale where strategy, skill, and teamwork determine survival. Choose from a diverse roster of Legends, each with unique abilities, and fight across dynamic battlegrounds in intense squad-based combat. Master weapons, outplay opponents, and become the champion in this ever-evolving, action-packed shooter."</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-img">
+                        <img src="Starfield-game-HD-scaled-1.jpg" alt="Game 3">
+                    </div>
+                    <div class="info">
+                        <h3>Game 3</h3>
+                        <p>$39.99</p>
+                        <div class="hover-description">Embark on an epic journey beyond the stars in Starfield, Bethesda’s next-generation open-world RPG. Explore a vast and immersive galaxy, uncovering the mysteries of space as you forge your own path among the stars. Customize your character, pilot your own spaceship, and engage in thrilling battles, deep exploration, and limitless adventures in this groundbreaking sci-fi experience.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="related">
+            <h2>Related</h2>
+            <div class="related-card-container">
+                <div class="related-card">
+                    <div class="game-img2">
+                        <img src="ark-survival-ascended-pc-game-steam-cover.jpg" alt="Related Game 1">
+                    </div>
+                    <div class="content2">
+                        <h3>ARK-ASENDED</h3>
+                        <p class="price2">$19.99</p>
+                        <ul>
+                            <li>1️⃣ Hit Markers </li>
+                            <li>2️⃣ Grass Bending </li>
+                            <li>3️⃣ Corpse Locator</li>
+                        </ul>
+                        <div class="hover-description2">Experience the ultimate survival adventure in ARK: Survival Ascended, a next-gen remake of the beloved dino-survival game. Explore vast prehistoric landscapes, tame and ride powerful creatures, build shelters, and craft tools to thrive in a dangerous world. With stunning Unreal Engine 5 visuals, improved AI, and enhanced multiplayer, the journey of survival has never been more immersive!</div>
+                    </div>
+                </div>
+
+                <div class="related-card">
+                    <div class="game-img2">
+                        <img src="924f48fd-2b18-4e07-8ce7-5fa4621d7dea.png" alt="Related Game 1">
+                    </div>
+                    <div class="content2">
+                        <h3>ANANTA </h3>
+                        <p class="price2">$19.99</p>
+                        <ul>
+                            <li>1️⃣Dynamic Combat</li>
+                            <li>2️⃣Immersive Urban Exploration</li>
+                            <li>3️⃣ Life Beyond Missions</li>
+                        </ul>
+                        <div class="hover-description2">ANANTA is an open-world action RPG set in the vibrant and unpredictable Nova City. As an elite Agent of the Anti-Chaos Directorate (A.C.D.), you’ll tackle supernatural threats, uncover mysteries, and engage in dynamic, high-energy combat. The city is alive with surprises, from intense missions to quirky, unexpected events. With a mix of humor, adventure, and deep exploration, ANANTA offers a unique and thrilling urban experience.</div>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="game-img2">
+                        <img src="maxresdefault.jpg" alt="Related Game 1">
+                    </div>
+                    <div class="content2">
+                        <h3>ENLISTED</h3>
+                        <p class="price2">$19.99</p>
+                        <ul>
+                            <li>1️⃣ Historical Warfare</li>
+                            <li>2️⃣ Dynamic Squad-Based Combat2</li>
+                            <li>3️⃣ Large-Scale Battles</li>
+                        </ul>
+                        <div class="hover-description2">Enlisted is a free-to-play, squad-based online shooter set during World War II. The game focuses on large-scale battles, where players take command of a squad of soldiers, each with their own roles and abilities. The game offers a unique approach to combat, emphasizing teamwork, strategy, and historical accuracy as players fight across vast maps in iconic WWII locations. With a mix of infantry, vehicles, and air support, Enlisted delivers a dynamic and immersive war experience.</div>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="game-img2">
+                        <img src="maxresdefault (1).jpg" alt="Related Game 1">
+                    </div>
+                    <div class="content2">
+                        <h3>PIONER</h3>
+                        <p class="price2">$19.99</p>
+                        <ul>
+                            <li>1️⃣ Survival in the Wilderness1</li>
+                            <li>2️⃣ Crafting and Building2</li>
+                            <li>3️⃣ Exploration and Discovery3</li>
+                        </ul>
+                        <div class="hover-description2">Pioneers is a survival adventure game that lets players take on the role of explorers forging new lives in the wilderness. Set in a beautifully crafted open world, players must gather resources, craft tools, and build their own settlements while dealing with the challenges of nature. From battling wildlife to surviving harsh weather, Pioneers offers a mix of exploration, survival, and building mechanics that immerse players in the ultimate pioneer experience.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 ###Shop.LK. All rights reserved. Powered by Pentacove</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
